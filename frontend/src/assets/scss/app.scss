@@ -1,0 +1,55 @@
+@import "~bootstrap/scss/functions"; 
+@import "~bootstrap/scss/variables";
+@import "./variables";
+
+$theme-colors: (
+  "primary": #61b03a
+);
+
+body {
+  background: #fcfcfc;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.App-content {
+  flex: 1;
+}
+.page-header {
+  background: $navbar-background;
+  color: #fff;
+  padding: 5px 0;
+  margin: 0 0 20px;
+}
+.models {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.models .card {
+  margin-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #f0f0f0;
+  background: $navbar-background;
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+.alert-danger {
+    color: #993c44;
+    background-color: #e8cacc;
+    border-color: #e4afb4;
+}
+.alert-warning {
+    color: #975e07;
+    background-color: #f0e1cb;
+    border-color: #e8d291;
+}
